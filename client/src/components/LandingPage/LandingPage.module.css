@@ -1,0 +1,54 @@
+.containLanding {
+    background-image: url("../../imagenes/lpnueva.png");
+    background-repeat: no-repeat;
+   background-position: center center; 
+    background-size: cover;
+    background-attachment: fixed;
+    height: 99vh;
+    padding-top: 7px;
+
+
+
+}
+
+.landingTitle {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    color:pink; 
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+.containTitle_text {
+   margin-top: 150px;
+   margin-right: 700px;
+   text-align: center;
+}
+/* %PUBLIC_URL%/favicon.ico */
+
+.landingText {
+  font: condensed 120% sans-serif; 
+  font-style: oblique;
+ 
+}
+
+.landingButton {
+    margin-left: 280px;
+    margin-top: 40px;
+}
+
+.landingButton {
+   width: 70px;
+   height: 40px;
+   background-color: grey;
+   color: white;
+   font-size: large;
+   border-radius: 15px;
+   border-color: grey;
+   
+}
+.landingButton:hover {
+   background-color: pink;
+   color: black;
+   border-color: pink;
+   cursor: pointer; 
+}

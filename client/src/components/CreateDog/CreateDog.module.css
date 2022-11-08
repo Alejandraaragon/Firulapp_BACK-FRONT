@@ -1,0 +1,80 @@
+.containCreate {
+    background-image: url("../../imagenes/gris1.webp");
+    background-repeat: no-repeat; 
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 99vh;
+    padding-top: 6px;
+}
+
+.btnHome {
+    background-color: aqua;
+    margin-left: 1200px;
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: grey;
+    color: white;
+    font-size: medium;
+    border-radius: 5px;
+    border-color: grey;
+}
+.btnHome:hover {
+    background-color: pink;
+    color: black;
+    border-color: pink;
+    cursor: pointer; 
+}
+
+.containAll {
+    background-color: white;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 15px;
+    margin-top: 30px;
+    color: white;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75));
+    padding-bottom: 20px;
+    padding-top: 1px;
+}
+
+.title {
+ 
+    padding-bottom: 10px;
+ 
+}
+.infoInput {
+justify-content: space-evenly;
+align-items: center;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap; 
+}
+
+.btnCreate {
+    margin-top: 60px;
+    width: 100px;
+    height: 40px;
+    background-color: pink;
+    color:white;
+    font-size: medium;
+    border-radius: 5px;
+    border-color: pink;
+}
+
+.btnCreate:hover {
+    background-color: gray;
+    color: white;
+    border-color: gray;
+    cursor: pointer; 
+}
+
+.temperCreate {
+justify-content: space-evenly;
+align-items: center;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap; 
+}

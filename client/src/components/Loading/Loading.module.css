@@ -1,0 +1,17 @@
+.containLoading {
+    background-image: url("../../imagenes/LOADING.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 99vh;
+    padding-top: 7px;
+}
+
+.textLoading {
+    font-family: Vegur, 'PT Sans', Verdana, sans-serif;
+    font-size: 40px;
+    color: white; 
+    text-shadow: black 0.1em 0.1em 0.2em;
+    margin-left: 40px;
+}

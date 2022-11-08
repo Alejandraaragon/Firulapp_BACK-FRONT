@@ -1,0 +1,74 @@
+.containNavBar {
+  background-color: white;
+  height: 13vh;
+
+}
+
+.contain2 {
+justify-content: space-between;
+ 
+}
+
+.labelTitle {
+  /*   font-family:  Vegur, 'PT Sans', Verdana, sans-serif; */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 45px;
+   /*  color: rgb(255, 0, 191);  */
+    color: pink;
+    text-shadow: gray 0.1em 0.1em 0.2em;
+    border-color: rgb(255, 0, 191);
+    margin-left: 60px;
+   
+}
+
+.imgHuella {
+    margin-left: 30px;
+  
+}
+
+.labelSearch {
+  margin-left: 180px;
+  padding-bottom: 30px;
+  font-size: medium;
+}
+
+.inputNav {
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+    
+}
+
+.btnNav {
+    width: 40px;
+    height: 30px;
+    background-color: grey;
+    color: white;
+    font-size: medium;
+    border-radius: 5px;
+    border-color: grey;
+}
+
+.btnNav:hover {
+   background-color: pink;
+   color: black;
+   border-color: pink;
+   cursor: pointer; 
+}
+
+.btnCreate {
+  margin-left: 330px; 
+  width: 100px;
+  height: 40px;
+  background-color: grey;
+  color: white;
+  font-size: medium;
+  border-radius: 5px;
+  border-color: grey;
+}
+.btnCreate:hover {
+    background-color: pink;
+    color: black;
+    border-color: pink;
+    cursor: pointer; 
+ }

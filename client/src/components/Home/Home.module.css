@@ -1,0 +1,98 @@
+.containHome {
+    background-image: url("../../imagenes/huellasgris.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;    
+}
+
+.containCard {
+   justify-content: space-evenly;
+   align-items: center;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+.containFilter {
+   text-align: center;
+   padding-top: 1px; 
+}
+
+/* .containFilterBtn {
+ color: azure;
+} */
+
+
+.containSearch {
+    font-family: Vegur, 'PT Sans', Verdana, sans-serif;
+    font-size: 25px;
+    color: white; 
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+.selectAll {
+   background-color: white;
+   font-size: medium;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   border-radius: 5px;
+   color: gray;
+   text-align: center;
+   font-style: inherit;
+}
+
+.selectAlpha {
+    background-color: white;
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    color: gray;
+    text-align: center;
+    font-style: inherit;
+}
+
+.selectTemp {
+    background-color: white;
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    color: gray;
+    text-align: center;
+    font-style: inherit;
+}
+
+.selectWeight{
+    background-color: white;
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    color:gray;
+    text-align: center;
+    font-style: inherit;
+}
+
+.resetDogs {
+  margin-top: 40px;
+  margin-left: 600px; 
+  width: 100px;
+  height: 40px;
+  background-color: white;
+  color: gray;
+  font-size: medium;
+  border-radius: 10px;
+  border: pink; 
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.resetDogs:hover {
+    background-color: pink;
+    color: black;
+    border-color: pink;
+    cursor: pointer; 
+ }
+
+ .containPaginate {
+    margin-left: 300px;
+}
+

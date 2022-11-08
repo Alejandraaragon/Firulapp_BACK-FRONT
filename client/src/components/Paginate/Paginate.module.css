@@ -1,0 +1,17 @@
+.buttonPaginate{
+    background-color: white;
+    margin-bottom: 20px;
+    color: gray;
+    border-color:  rgb(255, 0, 191);
+    border-radius: 5px;
+    width: 30px;
+    font-size: medium;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.buttonPaginate:hover {
+    background-color: gray;
+    color: white;
+    border-color: black;
+    cursor: pointer; 
+}
