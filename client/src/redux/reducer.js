@@ -10,8 +10,10 @@ import { GET_ALL_DOGS,
          POST_DOG,
          RESET,
          DB,
-         DELETE_DOG
+         DELETE_DOG,
+         HEIGHT_MAX
         } from "../constantes/index.js";
+import { heightMax } from "./actions.js";
 
 const initialState = {
     dogs: [], //es el filtro
@@ -98,6 +100,14 @@ const rootReducer = (state = initialState, action) => {
               ...state,
               dogs: filterWeight,
           };
+          case HEIGHT_MAX:
+            const totalDogs = state.filterDogs
+            const order = totalDogs.filter(e => e.heightMax > 50)
+              return {
+                ...state,
+                dogs: order
+              }
+                          
           
           case FILTER_BY_TEMPERAMENT:
             const dogsAll = state.filterDogs
@@ -125,11 +135,11 @@ const rootReducer = (state = initialState, action) => {
               details : {}
             }
 
-          case DELETE_DOG:
+          /* case DELETE_DOG:
             return {
            ...state,
            filterDogs: state.filterDogs.filter(e => e.id !== action.payload)
-            }
+            } */
           case POST_DOG : 
             return {
               ...state

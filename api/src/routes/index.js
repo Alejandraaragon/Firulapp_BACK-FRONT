@@ -1,17 +1,11 @@
 const { Router } = require('express');
-// Importar todos los routers;
-// Ejemplo: const authRouter = require('./auth.js');
 const { API_KEY } = process.env;
 const { Breed, Temperament } = require("../db");
 const { getInfoTotal } = require("../controllers/controllers.js");
 const router = Router();
 const axios = require('axios');
-// const {Sequelize, Model} = require('sequelize');
-//const express = require('express');
 
 
-// Configurar los routers
-// Ejemplo: router.use('/auth', authRouter);
 router.get("/dogs", async (req, res) => {
     const name = req.query.name;
     const allDogs = await getInfoTotal();

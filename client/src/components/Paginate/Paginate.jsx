@@ -16,7 +16,7 @@ const Paginate = ({allDogs, dogsPerPage, paginate}) => {
                 pageNumbers?.map((e) => {
                     return(
                         
-                            <button className={style.buttonPaginate} key={e} onClick={() => paginate(e)}>{e}</button>
+                            <button className={style.buttonPaginate} href key={e} onClick={() => paginate(e)}>{e}</button>
                             
                     )
                 })

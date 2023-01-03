@@ -1,5 +1,6 @@
+/* 
 .containCard {
-/* background-color: rgb(240, 135, 96);  */
+//background-color: rgb(240, 135, 96);  
 background-image: url("../../imagenes/rosa2.webp");
 background-repeat: no-repeat;
 background-position: center center;
@@ -10,35 +11,108 @@ height: 500px;
 overflow: hidden;
 border-radius: 10px;
 box-shadow: 7px 7px 2px 1px rgba(0, 0, 0, 0.2);
+} */
+
+.containCard {
+font-family: "Lato", sans-serif;
+box-sizing: border-box;
+width: 250px;
+height: 300px;
+padding: 2rem 1rem;
+background: #fff;
+display: flex;
+align-items: flex-end;
+position: relative;
+box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+transition: 0.5s ease-in-out;
+overflow: hidden;
+border-radius: 10px;
+
 }
 
-.cardImg {
+.containCard:hover {
+    transform: translateY(20px);
+}
+
+.containCard:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(18, 0, 176, 0.5), rgb(61, 201, 189));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+
+.containCard:hover:before {
+    opacity: 1;
+}
+
+.containCard .cardImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+} 
+
+/* .cardImg {
 align-items: center;
 justify-content: center;
 margin-left: 30px;
 border-radius: 10px;
 
+}  */
+.containCard .cardInfo {
+ position: absolute;
+ z-index: 3;
+ color: #fff;
+ opacity: 0;
+ 
+ transform: translateY(60px);
+ transition: 0.5s all;
+ text-align: center;
+ justify-content: center;
 }
 
-.cardInfo {
-text-decoration: none;
-text-align: center;
-color: black;
-font-family: Arial, Helvetica, sans-serif;
-margin-left: 5px;
-margin-right: 5px;
+.containCard:hover .cardInfo {
+    opacity: 1;
+    
+    transform: translateY(0px);
+    text-align: center;
+ justify-content: center;
 }
 
-.name {
+
+.containCard .cardInfo {
+letter-spacing: 1px;/* espacio entre letras */
+font-size: 15px;
+text-align: left;
+
+}
+
+.containCard .cardInfo .name {
+  margin: 1px;
+  color: #fff;
+  text-align: center;
+ 
+}
+
+/* .name {
 text-align: center;
 color: black;
-}
+} */
 
 a {
 text-decoration: none;
 }
 
-.row {
+/* .row {
 display: flex;
 justify-content: space-between;
-}
+} */

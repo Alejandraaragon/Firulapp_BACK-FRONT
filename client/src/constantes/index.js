@@ -19,3 +19,4 @@ export const ALL = "ALL";
 export const ALL_API_DB = "ALL_API_DB";
 export const ALL_CREATED = "ALL_CREATED";
 export const DELETE_DOG = "DELETE_DOG";
+export const HEIGHT_MAX = "HEIGHT_MAX";

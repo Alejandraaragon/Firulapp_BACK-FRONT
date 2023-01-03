@@ -1,42 +1,56 @@
-.containNavBar {
+ .containNavBar {
   background-color: white;
-  height: 13vh;
+  height: 11vh;
+  /* position: fixed; */
+  width: 100%;
+} 
 
-}
-
-.contain2 {
-justify-content: space-between;
+.containAll {
  
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
+.containImage {
+  margin-left: 20px;
+  margin-top: 7px;
+ 
+} 
 .labelTitle {
   /*   font-family:  Vegur, 'PT Sans', Verdana, sans-serif; */
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 45px;
-   /*  color: rgb(255, 0, 191);  */
-    color: pink;
-    text-shadow: gray 0.1em 0.1em 0.2em;
-    border-color: rgb(255, 0, 191);
-    margin-left: 60px;
-   
+    font-size: 40px;
+    font-style: inherit;/*     color: rgba(31, 41, 173, 0.712);
+       text-shadow: lightskyblue 0.1em 0.1em 0.1em;*/
+  /* color: #FF00FF ;*/
+  /*  color: rgb(4, 0, 255);
+   text-shadow: rgba(0, 140, 255, 0.568) 0.1em 0.1em 0.1em;
+     */
+     color: aquamarine;
+     text-shadow: 0 0 5px grey, 0 0 15px grey, 0 0 30px grey, 0 0 5px grey;
+ 
+   /*border-color: rgb(255, 0, 191); */
+    margin-left: 20px;
+    margin-bottom: 3px;
 }
 
-.imgHuella {
-    margin-left: 30px;
-  
+.containSearch {
+  margin-top: 5px;
 }
 
 .labelSearch {
   margin-left: 180px;
-  padding-bottom: 30px;
-  font-size: medium;
+  font-size: medium; 
 }
 
 .inputNav {
     width: 200px;
     height: 25px;
-    border-radius: 5px;
-    
+    border-radius: 5px;   
+    background-color: lightgray; 
 }
 
 .btnNav {
@@ -50,14 +64,16 @@ justify-content: space-between;
 }
 
 .btnNav:hover {
-   background-color: pink;
+   background-color: aquamarine;
    color: black;
-   border-color: pink;
+   border-color: aquamarine;
    cursor: pointer; 
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
 }
 
 .btnCreate {
-  margin-left: 330px; 
+  margin-left: 310px; 
   width: 100px;
   height: 40px;
   background-color: grey;
@@ -65,10 +81,15 @@ justify-content: space-between;
   font-size: medium;
   border-radius: 5px;
   border-color: grey;
+  margin-right: 10px;
+  
 }
+
 .btnCreate:hover {
-    background-color: pink;
+    background-color:aquamarine;
     color: black;
-    border-color: pink;
+    border-color: aquamarine;
     cursor: pointer; 
- }
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+ } 
+ 

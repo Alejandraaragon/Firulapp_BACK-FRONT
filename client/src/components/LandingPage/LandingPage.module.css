@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 .containLanding {
     background-image: url("../../imagenes/lpnueva.png");
     background-repeat: no-repeat;
@@ -6,34 +8,54 @@
     background-attachment: fixed;
     height: 99vh;
     padding-top: 7px;
-
-
-
-}
-
-.landingTitle {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 50px;
-    color:pink; 
-    text-shadow: black 0.1em 0.1em 0.2em
 }
 
 .containTitle_text {
+    align-items: center;
+}
+
+/*.landingTitle {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+     color:pink; 
+    text-shadow: black 0.1em 0.1em 0.2em 
+    color: rgb(4, 0, 255);
+    text-shadow: rgba(0, 140, 255, 0.568) 0.1em 0.1em 0.1em;
+}*/
+.landingTitle {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+/*     font-family: Vegur, 'PT Sans', Verdana, sans-serif;
+ */    font-size: 60px;
+    /* justify-content: center;
+    text-align: center;
+    margin: 0;
+    margin-top: 50px;
+    font-size: 50px; */
+    color: aquamarine;
+     text-shadow: 0 0 5px grey, 0 0 15px grey, 0 0 30px grey, 0 0 5px grey;
+ 
+}
+
+
+.containTitle_text {
    margin-top: 150px;
-   margin-right: 700px;
+   margin-right: 600px;
    text-align: center;
 }
-/* %PUBLIC_URL%/favicon.ico */
+
 
 .landingText {
-  font: condensed 120% sans-serif; 
+    font-family: "Lato", sans-serif;
+/*   font: condensed 120% sans-serif;  */
   font-style: oblique;
+  font-size: large;
  
 }
 
 .landingButton {
-    margin-left: 280px;
-    margin-top: 40px;
+   /*  margin-left: 280px;
+    margin-top: 40px; */
 }
 
 .landingButton {
@@ -47,8 +69,10 @@
    
 }
 .landingButton:hover {
-   background-color: pink;
-   color: black;
-   border-color: pink;
+   background-color: black;
+   color: white;
+   border-color: black;
    cursor: pointer; 
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
 }

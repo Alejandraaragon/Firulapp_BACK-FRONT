@@ -9,7 +9,8 @@ import { GET_ALL_DOGS,
          FILTER_BY_CREATED,
          CLEAR_DETAIL,
          RESET,
-         DELETE_DOG
+         DELETE_DOG,
+         HEIGHT_MAX
         
          } from "../constantes/index.js";
 
@@ -33,13 +34,24 @@ export const getDogsName = (name) => {
     }
 }
 
-export const getDogsDetail = (id) => {
+/* export const getDogsDetail = (id) => {
     return async function (dispatch) {
         let info = await axios.get(`http://localhost:3001/dogs/${id}`)
         return dispatch ({
             type: GET_DETAIL,
             payload: info.data
         })
+    }
+} */
+export function getDogsDetail (id) {
+    return function (dispatch) {
+        axios.get(`http://localhost:3001/dogs/${id}`)
+        .then(res => dispatch({
+            type: GET_DETAIL,
+            payload: res.data
+        }))
+        .catch(err =>
+            console.error(err))
     }
 }
 
@@ -108,7 +120,7 @@ export const clearDetail = () => {//es para limpiar el detail anterior
     }
 }
 
-export const deleteDogs = (id) => {
+/* export const deleteDogs = (id) => {
     return  async function (dispatch) {
         const info = await axios.delete(`http://localhost:3001/dogs/${id}`);
         return dispatch({
@@ -116,6 +128,12 @@ export const deleteDogs = (id) => {
             payload: info.data
         })
     }
+} */
+export const heightMax = () => {
+    return {
+        type: HEIGHT_MAX
+    }
 }
+
 
  

@@ -57,6 +57,11 @@ const Home = () => {
         setCurrentPage(1)
         setOrder(`Ordered ${e.target.value}`)
     }
+   /*  function handleHeight (e) {
+        e.preventDefault();
+        dispatch(heightMax(e.target.value))
+        setCurrentPage(1)
+    } */
 
     const handleClick = (e) => {
         e.preventDefault();
@@ -64,24 +69,21 @@ const Home = () => {
     }
 //allDogs.length > 0 ?
   return(
-    <div >
-       
-       <div className={style.containHome}>
+    <div>
+        <div className={style.containHome}>
        { allDogs.length > 0 ?
-            <div >
-              <NavBar className={style.containNav} paginate={paginate}/>
-              <div className={style.containFilterBtn}>
-                <div className={style.containFilter}>
-            <h3 className={style.containSearch}>SEARCH AND FILTER YOUR DOG:</h3> 
-            <div className={style.containSelect}>{/* filtros 
-                <select onChange={handleFilterCreated}>
-                   <option hidden>Dogs</option>
-                   <option key={1} value="All">All</option>
-                   <option key={2} value="Api">Api</option>
-                   <option key={3} value="Created">Created</option>
-                </select>*/}
+            <div>
+                <div className={style.containNav}>
+              <NavBar  paginate={paginate}/>
+              </div>
+
+              <div className={style.containAllFiltros}>
+              <br/>
+              <h3 >SEARCH AND FILTER YOUR DOG:</h3> 
+            <div className={style.containSearch}>{/* inicio FILTROS */}
+              <div className={style.containSelect}>
                 <select className={style.selectAll} onChange={handleFilterCreated}>
-                <option hidden>Dogs</option>
+                   <option hidden>Dogs</option>
                    <option key={1} value={ALL}>All</option>
                    <option key={2} value={API}>Api</option>
                    <option key={3} value={DB}>Created</option>
@@ -91,7 +93,7 @@ const Home = () => {
                    <option key={1} value="A-Z">A-Z</option>
                    <option key={2} value="Z-A">Z-A</option>
                 </select>
-               <select className={style.selectTemp} onChange={handleFilterTemper}>
+                <select className={style.selectTemp} onChange={handleFilterTemper}>
                    <option hidden>Temperament</option>
                    <option key={1+'e'} value="All">All</option>
                    {
@@ -106,12 +108,13 @@ const Home = () => {
                    <option key={2} value="min_weight">Min</option>
                 </select>
                 </div>
-                </div>{/* fin filtros */}
-                <div >
-                    
-                <button className={style.resetDogs} onClick={handleClick}><strong>RESET DOGS</strong></button>
+                </div>{/* fin FILTROS */}
                 </div>
-                </div> 
+                <div>
+                    
+                <button className={style.resetDogs} onClick={handleClick}><strong>Reset Dogs</strong></button>
+                </div>
+                
                 <br/>
                 
                 
@@ -138,7 +141,8 @@ const Home = () => {
                 <NotFound />
                  </div>
                   
-          }     </div>    
+          }     </div>  
+          <br/>  <br/> 
             <div className={style.containPaginate}>
                 <Paginate
                   dogsPerPage={dogsPerPage}
@@ -150,7 +154,7 @@ const Home = () => {
         
             </div>
                 :<Loading />    
-        }</div>
+       }</div>
     </div>
 
 )}

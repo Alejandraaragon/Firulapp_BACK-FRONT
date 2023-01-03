@@ -13,19 +13,18 @@ return(
                You can also create your own dog with the information you want.<br/>
                Enter now and have fun!
             </p>
-        </div>  
+         <br/> 
+         <br/> 
         <div className={style.containButton}>
             <Link to="/home">
                 <button className={style.landingButton}>GO</button>
             </Link>
+        </div>    
         </div>
         </div>
     )
 
 }
 export default LandingPage;
-/* Bienvenido a FiruApp, esta aplicacion te permitirá conocer cualquier 
-   raza de perros que existe con informacion detallada de cada uno. 
-   Tambien podras crear tu propio perro con la informacion que quieras. 
-   Entra ahora y diviertete  */
+
    

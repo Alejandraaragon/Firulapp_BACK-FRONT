@@ -1,17 +1,23 @@
-.buttonPaginate{
-    background-color: white;
-    margin-bottom: 20px;
-    color: gray;
-    border-color:  rgb(255, 0, 191);
-    border-radius: 5px;
-    width: 30px;
-    font-size: medium;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+.containPaginate{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
-.buttonPaginate:hover {
-    background-color: gray;
-    color: white;
-    border-color: black;
-    cursor: pointer; 
+.buttonPaginate {
+    background-color: aquamarine;
+    color: black;
+    font-size: medium;
+    border-radius: 5px;
+    border-color: aquamarine;
 }
+  
+.buttonPaginate:hover {
+      background-color: lightgrey;
+      color: black;
+      border-color: grey;
+      cursor: pointer; 
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+} 
+

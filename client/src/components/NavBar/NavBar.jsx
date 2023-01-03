@@ -6,7 +6,7 @@ import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
 import style from "../NavBar/NavBar.module.css";
 import huella from "../../imagenes/HUELLA.jpg";
-import NotFound from "../NotFound/NotFound.jsx";
+/* import NotFound from "../NotFound/NotFound.jsx"; */
 
 const NavBar = ({paginate}) => {
 
@@ -37,24 +37,29 @@ const NavBar = ({paginate}) => {
 
 return(
     <div className={style.containNavBar}>
-        <div>
-           <div className={style.contain2}>
-           <label className={style.labelTitle}>FIRULApp</label>
-           <img className={style.imgHuella} src={huella} alt="huella" width="50px"/>   
-           <label className={style.labelSearch}><strong>SEARCH:</strong> </label>
-           <input className={style.inputNav}
+        <div className={style.containAll}>
+           <div className={style.containImage}>
+             <img className={style.imgHuella} src={huella} alt="huella" width="50px"/>
+           </div>
+           <div className={style.labelTitle}>
+             <label>FIRULApp</label>
+           </div>
+           <div className={style.containSearch}>
+             <label className={style.labelSearch}><strong>SEARCH:</strong> </label>
+             <input className={style.inputNav}
                value={input}
                type="text"
                placeholder=" Name..."
                onChange={handleInput}>
-           </input>
-           <button className={style.btnNav}
+             </input>
+             <button className={style.btnNav}
                type="submit"
                onClick={handleSubmit}>GO</button>
+            </div> 
                <Link  to="/create"> 
                    <button className={style.btnCreate}>Create Dog</button>
                </Link>  
-            </div>
+            
         </div>
     </div>
  )

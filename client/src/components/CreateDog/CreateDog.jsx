@@ -243,26 +243,7 @@ return (
                </div>{/* 6 div */}
             </div>
 
-            {    /*error && //si hay un error y 
-               (error.name ||//
-                error.height_min ||
-                error.height_max ||
-                error.weight_min ||
-                error.weight_max ||
-                error.life_span ||
-                error.height_min_max ||
-                error.weight_min_max ||
-                !input.name.length ||
-                input.height_min <= 0 ||
-                input.height_max <= 0 ||
-                input.weight_min <= 0 ||
-                input.weight_max <= 0 ||
-                input.life_span <= 0 ||
-                input.height_min >= input.height_max ||
-                input.weight_min >= input.weight_max ||
-                !input.temperament.length) */
-
-                !error.name &&
+            {   !error.name &&
                 !error.height_min &&
                 !error.height_max &&
                 !error.weight_min &&
