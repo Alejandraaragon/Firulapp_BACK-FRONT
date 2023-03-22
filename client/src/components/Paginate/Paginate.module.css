@@ -6,18 +6,33 @@
 }
 
 .buttonPaginate {
-    background-color: aquamarine;
+    background-color: transparent;
     color: black;
     font-size: medium;
-    border-radius: 5px;
-    border-color: aquamarine;
+    border-color: transparent;
+
 }
   
 .buttonPaginate:hover {
       background-color: lightgrey;
       color: black;
-      border-color: grey;
+      border-color: transparent;
       cursor: pointer; 
-      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 } 
 
+@media (max-width: 500px) {
+   
+    .containPaginate {
+       align-items: center;
+       justify-content: center;
+       font-size: small;
+    }
+    .buttonPaginate{
+        
+        align-items: center;
+       justify-content: center;
+       font-size: small;
+       margin-left: 1%;
+    }
+   
+ }

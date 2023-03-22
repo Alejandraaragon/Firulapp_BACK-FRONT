@@ -96,5 +96,5 @@ router.post("/dogs", async (req, res) => {
     return res.status(200).send("Dog created")
 })
 
-//  router.use(express.json());
+
  module.exports = router;

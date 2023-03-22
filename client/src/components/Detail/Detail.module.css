@@ -4,30 +4,13 @@
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-    padding-top: 6px;
-   /*  text-align: center; */
+    padding-top: 0.1%;  
+    min-height: 100vh; 
+    margin: 0;
 }
 
-.btnHome {
-   
-    margin-left: 7px; 
-    margin-top: 7px;
-    width: 70px;
-    height: 30px;
-    background-color: grey;
-    color: white;
-    font-size: medium;
-    border-radius: 5px;
-    border-color: grey;
-}
-
-.btnHome:hover {
-    background-color: aquamarine;
-    color: black;
-    border-color: aquamarine;
-    cursor: pointer; 
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-
+.containNav {
+   background-color: transparent;
 }
 
 .detailTitle {
@@ -37,20 +20,25 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    text-shadow: black 0.1em 0.1em 0.2em
+    text-shadow: black 0.1em 0.1em 0.2em;
+    background-color: aqua;
 }
 
 .containImgInfo {
     color: white; 
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    background-color: #222;
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 
 .image {
-    border-radius: 15px;
-     border: 2px solid aqua;
+  height: 100%;
+  width: 50%;
+  /* margin-left: 10%; */
+  margin-left: 21%;
+
 }
 
 .nameDetail {
@@ -59,5 +47,32 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: #222;
+    margin-top: 10%;
 } 
 
+.containInfoDetail {
+   margin-right: 1%;
+}
+@media (max-width: 500px) {
+    .containDetail  {
+        margin-top: 20%;
+    }
+
+    .detailTitle {
+      font-size: medium;
+    }
+    .containImgInfo {
+        
+        display: block;
+        margin-bottom: 8%;
+    }
+    .image {
+        width: 80%;
+       margin-left: 10%;
+    }
+    .containInfoDetail {
+        margin-top: 5%;
+        text-align: center;
+    }
+ }

@@ -3,6 +3,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { getTemperament, postDog, getAllDogs } from "../../redux/actions";
 import style from "../CreateDog/CreateDog.module.css";
+import NavBar from "../NavBar/NavBar.jsx";
+import Banner2 from "../Banner2/Banner2.jsx"
+import Footer from "../Footer/Footer.jsx"
 
 /* const validateUrl = (url) => {
     try {
@@ -172,13 +175,13 @@ alert('At least one Dog temperament is required.');
 }
 return (
 <div className={style.containCreate}>
-    <div>{/* 2. div  */}
-    <Link to="/home">
-        <button className={style.btnHome}>HOME</button>
-    </Link>
-    </div>{/* 2. div  */}
-    <div className={style.containAll}> {/* 3. div  */}
-       <h2 className={style.title}>CREATE DOG</h2>
+  <div className={style.containComponents}>
+  <NavBar />
+  <Banner2 />
+  </div> 
+  <h2 className={style.title}>CREATE DOG</h2>
+    <div className={style.containAll}> 
+       
         <form onSubmit={e => handleSubmit(e)}>
             <div className={style.infoInput}>{/* 4. div- encierra: Name, Height Min, Height Max, Weight Min, Weight Max, Life Time*/}
                <div>
@@ -261,6 +264,7 @@ return (
             }
         </form>
     </div>{/* 3. div  */}
+    <Footer />
 </div>
 )
 

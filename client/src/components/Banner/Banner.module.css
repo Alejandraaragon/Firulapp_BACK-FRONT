@@ -1,0 +1,117 @@
+.banner {
+    margin-top: -2%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../../imagenes/lpnueva.png");
+     
+  }
+  /* .banner .tagline {
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    padding: 8px 10px;
+    background: linear-gradient(90.21deg, rgba(202, 95, 7, 0.966) -5.91%, rgba(89, 88, 90, 0.5) 111.58%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    margin-bottom: 16px;
+    display: inline-block;
+    margin-left: 1%;
+  } */
+  .banner h1 {
+    font-size: 65px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: 1%;
+    text-align: center;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    width: 40%;
+  }
+  .banner p {
+    color: grey;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 50%;
+    margin-left: 3%;
+    margin-top: 4%;
+    text-align: justify;
+   
+  }
+  .banner button {
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 60px;
+    letter-spacing: 0.8px;
+    display: flex;
+    align-items: center;
+  }
+  .banner button svg {
+    font-size: 25px;
+    margin-left: 10px;
+    transition: 0.3s ease-in-out;
+    line-height: 1.5;
+  }
+  .banner button:hover svg {
+    margin-left: 25px;
+  }
+  .banner img {
+    margin-left: 1.5%;
+  }
+
+
+  @media (max-width: 1100px) {
+ 
+  }
+  
+  @media (max-width: 800px) {
+   
+  } 
+  
+  
+  @media (max-width: 500px) {
+    .banner {
+     margin-top: 10%;
+     width: 100%;
+    }
+
+    .banner h1 {
+      font-size: x-large;
+       margin-left: 2%;
+       margin-top: 5%;
+    }
+
+    .banner p {
+      font-size: small;
+      margin-left: 4%;
+      height: 100px;
+      width: 50%;
+      margin-bottom: 10%;
+    }
+    }
+  /*
+
+  .banner img {
+    animation: updown 3s linear infinite;
+  }
+  @keyframes updown {
+      0% {
+          transform: translateY(-20px);
+      }
+      50% {
+          transform: translateY(20px);
+      }
+      100% {
+          transform: translateY(-20px);
+      }
+  }
+   .txt-rotate > .wrap {
+    border-right: 0.08em solid #666;
+  } */
+  

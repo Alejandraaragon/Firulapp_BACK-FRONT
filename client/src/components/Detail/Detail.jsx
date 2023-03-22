@@ -4,7 +4,7 @@ import { useParams, Link } from "react-router-dom";
 import { getDogsDetail, clearDetail } from "../../redux/actions.js";
 import Loading from "../Loading/Loading.jsx";
 import style from "../Detail/Detail.module.css";
-
+import NavBar from "../NavBar/NavBar.jsx";
 
 const Detail = () => {
 
@@ -22,15 +22,14 @@ const Detail = () => {
 
 
   return (
+   
     <div className={style.containDetail}>
+       <NavBar  className={style.containNav}/>
         <div>{
            dogDetail.length > 0 ? 
            <div>{/* div CONDICION:  tiene adentro la respuesta a la primer condicion. Tiene todo lo que deberia tener el detalle */}
              <div className={style.containBtnTitle}>
-             <Link to="/home">
-                 <button className={style.btnHome}>HOME</button>
-             </Link>
-             {/* <h1 className={style.detailTitle}>DETAIL DOG</h1><br/> */}
+             
              <h2 className={style.nameDetail}>{dogDetail[0].name}</h2><br/>
              </div>
              <div className={style.containImgInfo}>
@@ -39,7 +38,6 @@ const Detail = () => {
                </div>
 
                <div className={style.containInfoDetail}>
-                {/*  <h2 className={style.nameDetail}>{dogDetail[0].name}</h2><br/> */}
                  <h3># {dogDetail[0].id}</h3>
                  <h3>Weight: {dogDetail[0].weight_min} - {dogDetail[0].weight_max} KG</h3>
                  <h3>Height: {dogDetail[0].height_min} - {dogDetail[0].height_max} CM</h3>
@@ -50,13 +48,12 @@ const Detail = () => {
               <br/>
               <br/>
               <br/>
-              
-              
-           </div>/* div fin CONDICIKON: */
+          </div>/* div fin CONDICION: */
         : <Loading />
         }
         </div>
     </div>
+    
   )
 }
 

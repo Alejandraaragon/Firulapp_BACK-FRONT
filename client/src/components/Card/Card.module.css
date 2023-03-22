@@ -1,17 +1,4 @@
-/* 
-.containCard {
-//background-color: rgb(240, 135, 96);  
-background-image: url("../../imagenes/rosa2.webp");
-background-repeat: no-repeat;
-background-position: center center;
-background-size: cover;
-margin: 20px;
-width: 310px;
-height: 500px;
-overflow: hidden;
-border-radius: 10px;
-box-shadow: 7px 7px 2px 1px rgba(0, 0, 0, 0.2);
-} */
+
 
 .containCard {
 font-family: "Lato", sans-serif;
@@ -27,7 +14,7 @@ box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
 transition: 0.5s ease-in-out;
 overflow: hidden;
 border-radius: 10px;
-
+margin-bottom: 18%;
 }
 
 .containCard:hover {
@@ -61,13 +48,6 @@ border-radius: 10px;
     left: 0;
 } 
 
-/* .cardImg {
-align-items: center;
-justify-content: center;
-margin-left: 30px;
-border-radius: 10px;
-
-}  */
 .containCard .cardInfo {
  position: absolute;
  z-index: 3;
@@ -103,16 +83,11 @@ text-align: left;
  
 }
 
-/* .name {
-text-align: center;
-color: black;
-} */
 
 a {
 text-decoration: none;
 }
 
-/* .row {
-display: flex;
-justify-content: space-between;
-} */
+
+    
+ 

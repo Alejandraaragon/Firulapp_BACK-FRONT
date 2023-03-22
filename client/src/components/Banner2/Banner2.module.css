@@ -1,0 +1,121 @@
+.banner1 {
+    margin-top: 0;
+    padding-top: 12%;
+    padding-bottom: 8%;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #222; 
+  }
+  
+  .textImage1 {
+    font-size: 65px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: 1%;
+    text-align: center;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    width: 50%;
+    }
+  
+    .texting {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 42%;
+    margin-left: 3%;
+    margin-top: 2%;
+    text-align: justify; 
+  }
+
+  .success {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 42%;
+    margin-left: 3%;
+    margin-top: 2%;
+    text-align: center;
+  }
+
+  .banner button {
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 60px;
+    letter-spacing: 0.8px;
+    display: flex;
+    align-items: center;
+  }
+  .banner button svg {
+    font-size: 25px;
+    margin-left: 10px;
+    transition: 0.3s ease-in-out;
+    line-height: 1.5;
+  }
+  .banner button:hover svg {
+    margin-left: 20%;
+  }
+  .imgBanner2 {
+    height: 50%;
+    width: 45%;
+    border-radius: 50%;
+    margin-left: 50%;
+    margin-top: -20%;
+
+  }
+
+  @media (max-width: 500px) {
+    .banner1 {
+      
+      padding-top: 30%;
+      
+     }
+    .textImage1{
+      font-size: x-large;
+      margin-left: 23%;
+    }
+    .texting {
+      font-size: x-small;
+      margin-left: 14%;
+      height: 100px;
+      width: 70%;
+      text-align: center;
+    }
+    .success{
+      margin-left: 27%;
+    }
+    .imgBanner2 {
+      width: 100%;
+      border-radius: 0;
+      margin-left: 0%;
+      margin-top: 10%;
+      height: 20%;
+      margin-bottom: -9%;
+    }
+  } 
+
+  /* .banner img {
+    animation: updown 3s linear infinite;
+  }
+  @keyframes updown {
+      0% {
+          transform: translateY(-20px);
+      }
+      50% {
+          transform: translateY(20px);
+      }
+      100% {
+          transform: translateY(-20px);
+      }
+  }
+   .txt-rotate > .wrap {
+    border-right: 0.08em solid #666;
+  } */
+  

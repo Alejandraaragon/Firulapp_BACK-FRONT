@@ -10,6 +10,8 @@ import { getAllDogs, getTemperament, orderByNameAlpha, filterByCreated, resetDog
 import { useDispatch, useSelector } from "react-redux";
 import { API, DB, ALL } from "../../constantes/index.js";
 import style from "../Home/Home.module.css";
+import Banner from "../Banner/Banner.jsx";
+import Footer from "../Footer/Footer.jsx";
 
 
 const Home = () => {
@@ -76,10 +78,17 @@ const Home = () => {
                 <div className={style.containNav}>
               <NavBar  paginate={paginate}/>
               </div>
-
+              <br/>
+              <div>
+                <Banner />
+              </div>
               <div className={style.containAllFiltros}>
               <br/>
-              <h3 >SEARCH AND FILTER YOUR DOG:</h3> 
+              <br/>
+              <br/>
+              
+              <h1>FILTER</h1> 
+              <p>In this section you can make your personalized search. Filter to any breed of dog either from the app or from your own creation. Use and mix the different filters to find what you want</p>
             <div className={style.containSearch}>{/* inicio FILTROS */}
               <div className={style.containSelect}>
                 <select className={style.selectAll} onChange={handleFilterCreated}>
@@ -126,6 +135,7 @@ const Home = () => {
                   
                      <div>
                 <Card 
+                 
                    name={e.name}
                    image={e.image}
                    id={e.id}
@@ -155,6 +165,7 @@ const Home = () => {
             </div>
                 :<Loading />    
        }</div>
+       <Footer />
     </div>
 
 )}

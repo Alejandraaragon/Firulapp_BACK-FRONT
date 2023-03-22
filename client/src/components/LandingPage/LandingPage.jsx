@@ -5,8 +5,11 @@ import style from "./LandingPage.module.css";
 
 const LandingPage = () => {
 return(
+    
     <div className={style.containLanding}>
-        <div className={style.containTitle_text}>
+       <div className={style.contain}>
+           <div className={style.containTitle_text}>
+
             <h1 className={style.landingTitle}>FIRULApp </h1><br/>
             <p className={style.landingText}>Welcome to FiruApp, this application will allow you to know any<br/>
                breed of dogs that exists with detailed information on each one.<br/>
@@ -19,9 +22,12 @@ return(
             <Link to="/home">
                 <button className={style.landingButton}>GO</button>
             </Link>
-        </div>    
+        </div>  
         </div>
+
         </div>
+    </div> 
+        
     )
 
 }
